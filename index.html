@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Paint.js</title>
+    <script type="module" src="vanilla.js"></script>
+</head>
+<body>
+        <div class="header">
+            <img src="./icons/icon.png" alt="paint icon">
+            <h1>
+                Paint.js
+            </h1>
+        </div>
+        
+        <div class="container" id="container">
+        
+            <header>
+                <div class="header__buttons">
+                    <button>File</button>
+                    <button>Edit</button>
+                    <button>View</button>
+                    <button>Image</button>
+                    <button>Options</button>
+                    <button>Help</button>
+                </div>
+            </header>
+        
+            <main>
+                <canvas class="canvas" id="canvas"></canvas>
+            </main>
+
+            <footer>
+                <input type="color" id="color-picker">
+            </footer>
+
+        </div>
+</body>
+</html>
