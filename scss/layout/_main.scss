@@ -1,8 +1,12 @@
 main{
-    width: 100%;
-    height: 529px;
-    background: #fff;
+    grid-area: main;
+    width: 547px;
+    height: 429px;
 }
 .canvas{
-    // 
+    border: 1px solid black;
+    background-color: white;
+    width: 547px;
+    height: 429px;
+    
 }

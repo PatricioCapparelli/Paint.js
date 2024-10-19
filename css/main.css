@@ -4,12 +4,23 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "OTTO";
+  src: url("/assets/fonts/W95FA.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #222;
   max-width: 600px;
   margin: 0 auto;
   height: auto;
+}
+
+header {
+  grid-area: header;
+  background: silver;
 }
 
 .header {
@@ -32,10 +43,11 @@ body {
 .header__buttons {
   display: flex;
   background: silver;
-  width: 100%;
+  width: 50%;
   padding: 2px;
 }
 .header__buttons button {
+  font-family: "OTTO", Arial, Helvetica, sans-serif;
   border: 0;
   background: transparent;
   width: 60px;
@@ -45,19 +57,87 @@ body {
 }
 
 main {
-  width: 100%;
-  height: 529px;
-  background: #fff;
+  grid-area: main;
+  width: 547px;
+  height: 429px;
+}
+
+.canvas {
+  border: 1px solid black;
+  background-color: white;
+  width: 547px;
+  height: 429px;
 }
 
 footer {
+  grid-area: footer;
   width: 100%;
   background: silver;
   padding: 4px;
 }
 
 .container {
+  display: grid;
   border: 1px solid white;
+  grid-template-areas: "header header header" "aside main main" "footer footer footer";
+  grid-template-columns: 52px auto auto;
+}
+
+aside {
+  grid-area: aside;
+  background: silver;
+  width: 52px;
+  padding-top: 2px;
+}
+aside nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+aside button {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #000;
+  background: #bdbdbd no-repeat center;
+  border: 1.5px solid #eee;
+  border-right-color: #000;
+  border-bottom-color: #000;
+  image-rendering: pixelated;
+}
+aside button.active {
+  background-color: #eeeeee;
+  border-color: #000;
+  border-right-color: #eee;
+  border-bottom-color: #eee;
+}
+aside button[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+#draw-btn {
+  background: url(/assets/icons/draw.png);
+}
+
+#erase-btn {
+  background: url(/assets/icons/erase.png);
+}
+
+#rectangle-btn {
+  background: url(/assets/icons/rectangle.png);
+}
+
+#ellipse-btn {
+  background: url(/assets/icons/ellipse.png) no-repeat center;
+}
+
+#picker-btn {
+  background: url(/assets/icons/picker.png);
+}
+
+#clear-btn {
+  background: url(/assets/icons/trash.png) no-repeat center;
+  background-size: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

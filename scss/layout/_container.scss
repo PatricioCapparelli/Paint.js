@@ -1,3 +1,10 @@
 .container{
+    display: grid;
     border: 1px solid white;
+    grid-template-areas:
+        'header header header'
+        'aside main main'
+        'footer footer footer';
+
+    grid-template-columns: 52px auto auto;
 }

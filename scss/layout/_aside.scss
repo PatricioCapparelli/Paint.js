@@ -1,0 +1,64 @@
+aside{
+    grid-area: aside;
+    background: silver;
+    width: 52px;
+    padding-top: 2px;
+    
+    & nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+    & button {
+        width: 24px;
+        height: 24px;
+
+        border: 1px solid #000;
+        background: #bdbdbd no-repeat center;
+
+        border: 1.5px solid #eee;
+        border-right-color: #000;
+        border-bottom-color: #000;
+
+        image-rendering: pixelated;
+
+        &.active{
+            background-color: #eeeeee;
+            border-color: #000;
+            border-right-color: #eee;
+            border-bottom-color: #eee;
+        }
+
+        &[disabled]{
+            pointer-events: none;
+            opacity: .5;
+        }
+
+    }
+}
+
+#draw-btn{
+    background: url(/assets/icons/draw.png);
+}
+
+#erase-btn{
+    background: url(/assets/icons/erase.png);
+}
+
+#rectangle-btn{
+    background: url(/assets/icons/rectangle.png);
+}
+
+#ellipse-btn{
+    background: url(/assets/icons/ellipse.png) no-repeat center;
+}
+
+#picker-btn{
+    background: url(/assets/icons/picker.png);
+}
+
+#clear-btn{
+    background: url(/assets/icons/trash.png) no-repeat center;
+    background-size: 20px;
+}
