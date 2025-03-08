@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Paint.js</title>
     <script type="module" src="vanilla.js"></script>
 </head>
 <body>
         <div class="header">
-            <img src="/assets/icons/icon.png" alt="paint icon">
+            <img src="./assets/icons/icon.png" alt="paint icon">
             <h1>
                 Paint.js
             </h1>
         </div>
-        
         <div class="container" id="container">
-        
             <header>
                 <div class="header__buttons">
                     <button id="save-file">File</button>
@@ -27,7 +25,6 @@
                     <button>Help</button>
                 </div>
             </header>
-
             <aside>
                 <nav>
                     <button id="draw-btn" title="Pincel"></button>
@@ -38,15 +35,12 @@
                     <button id="clear-btn" title="Limpiar Dibujo"></button>
                 </nav>
             </aside>
-        
             <main>
                 <canvas class="canvas" id="canvas"></canvas>
             </main>
-
             <footer>
                 <input type="color" id="color-picker">
             </footer>
-
         </div>
 </body>
 </html>

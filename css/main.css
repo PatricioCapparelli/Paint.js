@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "OTTO";
-  src: url("/assets/fonts/W95FA.otf") format("opentype");
+  src: url("../assets/fonts/W95FA.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -116,27 +116,27 @@ aside button[disabled] {
 }
 
 #draw-btn {
-  background: url(/assets/icons/draw.png);
+  background: url(../assets/icons/draw.png);
 }
 
 #erase-btn {
-  background: url(/assets/icons/erase.png);
+  background: url(../assets/icons/erase.png);
 }
 
 #rectangle-btn {
-  background: url(/assets/icons/rectangle.png);
+  background: url(../assets/icons/rectangle.png);
 }
 
 #ellipse-btn {
-  background: url(/assets/icons/ellipse.png) no-repeat center;
+  background: url(../assets/icons/ellipse.png) no-repeat center;
 }
 
 #picker-btn {
-  background: url(/assets/icons/picker.png);
+  background: url(../assets/icons/picker.png);
 }
 
 #clear-btn {
-  background: url(/assets/icons/trash.png) no-repeat center;
+  background: url(../assets/icons/trash.png) no-repeat center;
   background-size: 20px;
 }
 
